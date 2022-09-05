@@ -1,0 +1,260 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+}
+
+body {
+    font-family: 'Roboto Mono',
+        monospace;
+    background-image: url("/images/background.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+header ul li a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+
+body h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+}
+
+section {
+    display: flex;
+    color: var(--white);
+    overflow-y: hidden;
+    overflow-x: auto;
+    justify-content: center;
+    margin: 24px;
+}
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    color: var(--white)
+}
+
+main h3 {
+    display: flex;
+    justify-content: center;
+    color: var(--white)
+}
+
+.card-section {
+    justify-content: unset;
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    height: 50vh;
+    margin: 8px;
+}
+
+.card img {
+    padding: 4px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img {
+    display: flex;
+    width: 30%;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 24px;
+}
+
+.sub-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+    margin: 24px;
+}
+
+.sub-nav ul li a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
+
+.people-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-people-section {
+    margin: 24px;
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-people-section {
+    height: 8vw;
+}
+
+.link-container-people-section {
+    display: flex;
+    justify-content: center;
+}
+
+.anexo-inf-people-section {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    width: 25%;
+    margin: 12px;
+}
+
+.anexo-inf-people-section:hover {
+    border: 1px solid var(--hospital-green);
+}
+
+body h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-title {
+    color: var(--white);
+    margin: 24px;
+}
+
+body h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-subtitle {
+    color: var(--white);
+}
+
+.investigators-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+.container-investigator-section {
+    display: flex;
+    align-items: center;
+    margin: 24px;
+}
+
+.container-investigator-section img {
+    height: 12vw;
+}
+
+.inf-investigator-section {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+}
+
+.activities-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    width: 75%;
+}
+
+.container-section {
+    display: flex;
+    justify-content: center;
+}
+
+.inf-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 24px;
+}
+
+.img-section {
+    align-self: center;
+    justify-self: center;
+    height: 20vw;
+}
+
+.lunar-container-section {
+    width: 75%;
+}
+
+.credits-section {
+    display: flex;
+    justify-content: center;
+}
+
+.credit-link {
+    color: var(--white);
+}
