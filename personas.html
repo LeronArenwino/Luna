@@ -7,6 +7,7 @@
 <head>
     <!-- Sirve para que el navegador entienda caracteres especiales -->
     <meta charset="UTF-8">
+    <!--  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Permite que proyecto se ajuste al tamaño del dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,14 +26,14 @@
 
 <body>
     <!-- Header de navegación del sitio web -->
-    <header class="sticky-top">
+    <header class="sticky-top font-monospace">
         <!-- Elemento de navegación del sitio web -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
             <!-- Elemento para mostrar el brand de la Luna y su ícono -->
             <a class="navbar-brand">
                 <!-- Ícono de la Luna -->
                 <img src="./images/moon.png" alt="Logo" width="24" height="24"
-                    class="d-inline-block align-text-top mx-2">Luna
+                    class="d-inline-block align-text-top mx-2">
             </a>
             <!-- Botón para visible en los dispositivos móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -72,309 +73,331 @@
                 </ul>
             </div>
         </nav>
+        <!-- Elemento para navegar en la página -->
+        <nav id="navbar-example2" class="navbar bg-dark px-3 mb-3 justify-content-center">
+            <!-- Elemento lista desordenada -->
+            <ul class="nav nav-pills">
+                <!-- Elemento de la lista desordenada -->
+                <li class="nav-item">
+                    <!-- Hyperlink hacía la sección de astronautas -->
+                    <a class="nav-link" href="#astronaut">Astronautas</a>
+                </li>
+                <!-- Elemento de la lista desordenada -->
+                <li class="nav-item">
+                    <!-- Hyperlink hacía la sección de astrónomos -->
+                    <a class="nav-link" href="#astronomers">Astrónomos</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <!-- Título principal-->
-    <h1>Personas relacionadas con la Luna</h1>
-    <!-- Elemento para navegar en la página -->
-    <nav class="sub-nav">
-        <!-- Elemento lista desordenada -->
-        <ul>
-            <!-- Elemento de la lista desordenada -->
-            <li>
-                <!-- Hyperlink hacía la sección de astronautas -->
-                <a href="#astronaut">Astronautas</a>
-            </li>
-            <!-- Elemento de la lista desordenada -->
-            <li>
-                <!-- Hyperlink hacía la sección de astrónomos -->
-                <a href="#astronomers">Astrónomos</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- Sección principal -->
-    <main>
-        <!-- Título de la sección principal -->
-        <h2 id="astronaut">Astronautas</h2>
-        <!-- Subtítulo de la sección principal -->
-        <h3>Estos son los hombres que han estado en la Luna</h3>
-        <!-- Sección de las astronautas -->
-        <section class="people-section">
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/Neil_Armstrong_pose.jpg" alt="Imagen de Neil Armstrong">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Neil Armstrong</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 11</p>
+    <!-- Contenido del sitio web -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true"
+        class="scrollspy-example p-3 container-fluid py-3 px-3 text-center text-light font-monospace" tabindex="0">
+
+
+        <!-- Título principal-->
+        <h1 class="fw-bold">Personas relacionadas con la Luna</h1>
+
+        <!-- Sección principal -->
+        <main>
+            <!-- Título de la sección principal -->
+            <h2 id="astronaut">Astronautas</h2>
+            <!-- Subtítulo de la sección principal -->
+            <h3>Estos son los hombres que han estado en la Luna</h3>
+            <!-- Sección de las astronautas -->
+            <section class="people-section">
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/Neil_Armstrong_pose.jpg"
+                        alt="Imagen de Neil Armstrong">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Neil Armstrong</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 11</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/Buzz_Aldrin_(S69-31743).jpg"
+                        alt="Imagen de Buzz Aldrin">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Buzz Aldrin</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 11</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/Conrad-c.jpg" alt="Imagen de Charles Conrad">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Charles Conrad</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 12</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/Alan_Bean_NASA_portrait_(S69-38859).jpg"
+                        alt="Imagen de Alan Bean">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Alan Bean</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 12</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/379px-Alan_shepard.jpg" alt="Imagen de Alan Shepard">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Alan Shepard</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 14</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/Edgar_Dean_Mitchell.jpg"
+                        alt="Imagen de Edgar Mitchell">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Edgar Mitchell</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 14</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/Dave_Scott_Apollo_15_CDR.jpg"
+                        alt="Imagen de David Scott">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>David Scott</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 15</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/Jim_Irwin_Apollo_15_LMP.jpg"
+                        alt="Imagen de James Irwin">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>James Irwin</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 15</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/384px-John_Watts_Young.jpg"
+                        alt="Imagen de John Young">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>John Young</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 16</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/Official_NASA_portrait_Charles_Moss_Duke_Jr.jpg"
+                        alt="Imagen de Charles Duke">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Charles Duke</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 16</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/384px-Cernan_s71-51308.jpg"
+                        alt="Imagen de Gene Cernan">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Gene Cernan</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 17</p>
+                    </div>
+                </div>
+                <!-- Contenedor del contenido del astronauta -->
+                <div class="container-people-section">
+                    <!-- Imagen del astronauta-->
+                    <img class="img-people-section" src="./images/384px-Harrison_Schmitt.jpg"
+                        alt="Imagen de Harrison Schmitt">
+                    <!-- Información del astronauta -->
+                    <div class="inf-people-section">
+                        <!-- Título con el nombre del astronauta -->
+                        <h3>Harrison Schmitt</h3>
+                        <!-- Párrafo en bold -->
+                        <p>
+                            <b>Misión:</b>
+                        </p>
+                        <!-- Párrafo con la misión del astronauta -->
+                        <p>Apolo 17</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Contenedor del link de anexo -->
+            <div class="link-container-people-section">
+                <!-- Hyperlink hacía la información detallada de los astronautas -->
+                <a class="anexo-inf-people-section"
+                    href="https://es.wikipedia.org/wiki/Anexo:Personas_que_han_caminado_sobre_la_Luna"
+                    target="_blank">Anexo</a>
+            </div>
+        </main>
+        <!-- Título de la sección de astrónomos -->
+        <h2 id="astronomers" class="section-title">Astrónomos</h2>
+        <!-- Subtítulo de la sección de astrónomos -->
+        <h3 class="section-subtitle">Algunas de las personas que realizaron investigaciones lunares</h3>
+        <!-- Sección de los astrónomos -->
+        <section class="investigators-section">
+            <!-- Contenedor del contenido del astrónomo -->
+            <div class="container-investigator-section">
+                <!-- Imagen del contenido del astrónomo -->
+                <img class="img-investigator-section" src="./images/JKepler.jpg" alt="Imagen de Johannes Kepler">
+                <!-- Contenido del astrónomo -->
+                <div class="inf-investigator-section">
+                    <!-- Nombre del astrónomo -->
+                    <h3>Johannes Kepler</h3>
+                    <!-- Párrafo con información del astrónomo -->
+                    <p>Johannes Kepler tuvo importancia en la fundación de la nueva ciencia dedicada al estudio de la
+                        Luna
+                        denominada Selenografía,
+                        pues sus principios sobre el telescopio astronómico sirvieron a Galileo a elaborar sus trabajos,
+                        además de realizar él
+                        mismo una carta lunar tan tosca como las de sus compañeros gracias a un nuevo diseño de montura
+                        ecuatorial para su
+                        telescopio que le proporcionó un jesuita llamado Scheiner, quien además dibujó un mapa lunar en
+                        el
+                        año 1645.</p>
                 </div>
             </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/Buzz_Aldrin_(S69-31743).jpg" alt="Imagen de Buzz Aldrin">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Buzz Aldrin</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 11</p>
+            <!-- Contenedor del contenido del astrónomo -->
+            <div class="container-investigator-section">
+                <!-- Imagen del contenido del astrónomo -->
+                <img class="img-investigator-section" src="./images/230px-Johann_Hieronymus_Schröter.png"
+                    alt="Imagen de Johann Schröter">
+                <!-- Contenido del astrónomo -->
+                <div class="inf-investigator-section">
+                    <!-- Nombre del astrónomo -->
+                    <h3>Johann Schröter</h3>
+                    <!-- Párrafo con información del astrónomo -->
+                    <p>Hacia 1778 Johann Schröter, magistrado supremo de la ciudad de Lilienthal, estudió la Luna y
+                        realizó
+                        cientos de
+                        observaciones muy detalladas de las fisuras y grietas que observaba, utilizando para ello
+                        telescopios diseñados por
+                        Herschel. Los franceses destruyeron su observatorio durante las guerras napoleónicas, y con él
+                        su
+                        trabajo sobre los
+                        planetas: lo mismo ocurrió con el gran reflector de Herschel de 61 cm instalado en el
+                        Observatorio
+                        Astronómico de
+                        Madrid, inaugurado en el verano de 1790 y quemado en 1808 por las tropas francesas, del cual
+                        solo se
+                        salvó el espejo
+                        metálico del objetivo.</p>
                 </div>
             </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/Conrad-c.jpg" alt="Imagen de Charles Conrad">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Charles Conrad</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 12</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/Alan_Bean_NASA_portrait_(S69-38859).jpg"
-                    alt="Imagen de Alan Bean">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Alan Bean</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 12</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/379px-Alan_shepard.jpg" alt="Imagen de Alan Shepard">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Alan Shepard</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 14</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/Edgar_Dean_Mitchell.jpg" alt="Imagen de Edgar Mitchell">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Edgar Mitchell</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 14</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/Dave_Scott_Apollo_15_CDR.jpg" alt="Imagen de David Scott">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>David Scott</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 15</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/Jim_Irwin_Apollo_15_LMP.jpg" alt="Imagen de James Irwin">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>James Irwin</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 15</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/384px-John_Watts_Young.jpg" alt="Imagen de John Young">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>John Young</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 16</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/Official_NASA_portrait_Charles_Moss_Duke_Jr.jpg"
-                    alt="Imagen de Charles Duke">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Charles Duke</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 16</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/384px-Cernan_s71-51308.jpg" alt="Imagen de Gene Cernan">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Gene Cernan</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 17</p>
-                </div>
-            </div>
-            <!-- Contenedor del contenido del astronauta -->
-            <div class="container-people-section">
-                <!-- Imagen del astronauta-->
-                <img class="img-people-section" src="./images/384px-Harrison_Schmitt.jpg"
-                    alt="Imagen de Harrison Schmitt">
-                <!-- Información del astronauta -->
-                <div class="inf-people-section">
-                    <!-- Título con el nombre del astronauta -->
-                    <h3>Harrison Schmitt</h3>
-                    <!-- Párrafo en bold -->
-                    <p>
-                        <b>Misión:</b>
-                    </p>
-                    <!-- Párrafo con la misión del astronauta -->
-                    <p>Apolo 17</p>
+            <!-- Contenedor del contenido del astrónomo -->
+            <div class="container-investigator-section">
+                <!-- Imagen del contenido del astrónomo -->
+                <img class="img-investigator-section" src="./images/Julio_Garavito_Armero.gif"
+                    alt="Imagen de Julio Garavito">
+                <!-- Contenido del astrónomo -->
+                <div class="inf-investigator-section">
+                    <!-- Nombre del astrónomo -->
+                    <h3>Julio Garavito</h3>
+                    <!-- Párrafo con información del astrónomo -->
+                    <p>Julio Garavito Armero fue un astrónomo,
+                        matemático, economista,
+                        poeta e ingeniero colombiano. Sus investigaciones contribuyeron al desarrollo de las ciencias en
+                        Colombia durante el
+                        siglo xix. Ha sido situado al mismo nivel de otros dos importantes científicos neogranadinos del
+                        siglo xix, José
+                        Celestino Mutis y Francisco José de Caldas.
+
+                        En su honor, uno de los cráteres lunares del lado opuesto al visible desde la Tierra, fue
+                        bautizado
+                        con su nombre en el
+                        año 1970.</p>
                 </div>
             </div>
         </section>
-        <!-- Contenedor del link de anexo -->
-        <div class="link-container-people-section">
-            <!-- Hyperlink hacía la información detallada de los astronautas -->
-            <a class="anexo-inf-people-section"
-                href="https://es.wikipedia.org/wiki/Anexo:Personas_que_han_caminado_sobre_la_Luna"
-                target="_blank">Anexo</a>
-        </div>
-    </main>
-    <!-- Título de la sección de astrónomos -->
-    <h2 id="astronomers" class="section-title">Astrónomos</h2>
-    <!-- Subtítulo de la sección de astrónomos -->
-    <h3 class="section-subtitle">Algunas de las personas que realizaron investigaciones lunares</h3>
-    <!-- Sección de los astrónomos -->
-    <section class="investigators-section">
-        <!-- Contenedor del contenido del astrónomo -->
-        <div class="container-investigator-section">
-            <!-- Imagen del contenido del astrónomo -->
-            <img class="img-investigator-section" src="./images/JKepler.jpg" alt="Imagen de Johannes Kepler">
-            <!-- Contenido del astrónomo -->
-            <div class="inf-investigator-section">
-                <!-- Nombre del astrónomo -->
-                <h3>Johannes Kepler</h3>
-                <!-- Párrafo con información del astrónomo -->
-                <p>Johannes Kepler tuvo importancia en la fundación de la nueva ciencia dedicada al estudio de la Luna
-                    denominada Selenografía,
-                    pues sus principios sobre el telescopio astronómico sirvieron a Galileo a elaborar sus trabajos,
-                    además de realizar él
-                    mismo una carta lunar tan tosca como las de sus compañeros gracias a un nuevo diseño de montura
-                    ecuatorial para su
-                    telescopio que le proporcionó un jesuita llamado Scheiner, quien además dibujó un mapa lunar en el
-                    año 1645.</p>
-            </div>
-        </div>
-        <!-- Contenedor del contenido del astrónomo -->
-        <div class="container-investigator-section">
-            <!-- Imagen del contenido del astrónomo -->
-            <img class="img-investigator-section" src="./images/230px-Johann_Hieronymus_Schröter.png"
-                alt="Imagen de Johann Schröter">
-            <!-- Contenido del astrónomo -->
-            <div class="inf-investigator-section">
-                <!-- Nombre del astrónomo -->
-                <h3>Johann Schröter</h3>
-                <!-- Párrafo con información del astrónomo -->
-                <p>Hacia 1778 Johann Schröter, magistrado supremo de la ciudad de Lilienthal, estudió la Luna y realizó
-                    cientos de
-                    observaciones muy detalladas de las fisuras y grietas que observaba, utilizando para ello
-                    telescopios diseñados por
-                    Herschel. Los franceses destruyeron su observatorio durante las guerras napoleónicas, y con él su
-                    trabajo sobre los
-                    planetas: lo mismo ocurrió con el gran reflector de Herschel de 61 cm instalado en el Observatorio
-                    Astronómico de
-                    Madrid, inaugurado en el verano de 1790 y quemado en 1808 por las tropas francesas, del cual solo se
-                    salvó el espejo
-                    metálico del objetivo.</p>
-            </div>
-        </div>
-        <!-- Contenedor del contenido del astrónomo -->
-        <div class="container-investigator-section">
-            <!-- Imagen del contenido del astrónomo -->
-            <img class="img-investigator-section" src="./images/Julio_Garavito_Armero.gif"
-                alt="Imagen de Julio Garavito">
-            <!-- Contenido del astrónomo -->
-            <div class="inf-investigator-section">
-                <!-- Nombre del astrónomo -->
-                <h3>Julio Garavito</h3>
-                <!-- Párrafo con información del astrónomo -->
-                <p>Julio Garavito Armero fue un astrónomo,
-                    matemático, economista,
-                    poeta e ingeniero colombiano. Sus investigaciones contribuyeron al desarrollo de las ciencias en
-                    Colombia durante el
-                    siglo xix. Ha sido situado al mismo nivel de otros dos importantes científicos neogranadinos del
-                    siglo xix, José
-                    Celestino Mutis y Francisco José de Caldas.
+    </div>
 
-                    En su honor, uno de los cráteres lunares del lado opuesto al visible desde la Tierra, fue bautizado
-                    con su nombre en el
-                    año 1970.</p>
-            </div>
-        </div>
-    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
