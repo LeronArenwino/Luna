@@ -17,43 +17,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
 <!-- Todo los elementos interactivos con los que el usuario podrá interactuar -->
 
 <body>
     <!-- Header de navegación del sitio web -->
-    <header>
+    <header class="sticky-top">
         <!-- Elemento de navegación del sitio web -->
-        <nav>
-            <!-- Elemento lista desordenada -->
-            <ul>
-                <!-- Elemento de la lista desordenada -->
-                <li>
-                    <!-- Hyperlink hacía el inicio -->
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <!-- Elemento de la lista desordenada -->
-                <li>
-                    <!-- Hyperlink hacía la ubicación -->
-                    <a href="./ubicacion.html">Ubicación</a>
-                </li>
-                <!-- Elemento de la lista desordenada -->
-                <li>
-                    <!-- Hyperlink hacía las personas -->
-                    <a href="./personas.html">Personas</a>
-                </li>
-                <!-- Elemento de la lista desordenada -->
-                <li>
-                    <!-- Hyperlink hacía las actividades -->
-                    <a href="./actividades.html">Actividades</a>
-                </li>
-                <!-- Elemento de la lista desordenada -->
-                <li>
-                    <!-- Hyperlink hacía la historia -->
-                    <a href="./historia.html">Historia</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
+            <!-- Elemento para mostrar el brand de la Luna y su ícono -->
+            <a class="navbar-brand">
+                <!-- Ícono de la Luna -->
+                <img src="./images/moon.png" alt="Logo" width="24" height="24"
+                    class="d-inline-block align-text-top mx-2">Luna
+            </a>
+            <!-- Botón para visible en los dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Ícono que se muestra en el botón -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú desplegable en dispositivos móviles -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <!-- Elemento lista desordenada -->
+                <ul class="navbar-nav">
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía el inicio -->
+                        <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía la ubicación -->
+                        <a class="nav-link active" aria-current="page" href="./ubicacion.html">Ubicación</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía las personas -->
+                        <a class="nav-link" aria-current="page" href="./personas.html">Personas</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía las actividades -->
+                        <a class="nav-link" aria-current="page" href="./actividades.html">Actividades</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía la historia -->
+                        <a class="nav-link" aria-current="page" href="./historia.html">Historia</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- Título principal-->
@@ -186,6 +203,9 @@
             </article>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
