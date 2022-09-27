@@ -19,7 +19,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<!-- Todo los elementos interactivos con los que el usuario podrá interactuar -->
+<!-- Todo los elementos que componen el sitio web -->
 
 <body>
     <div id='stars'></div>
@@ -90,233 +90,228 @@
             </ul>
         </nav>
     </header>
-    <!-- Contenido del sitio web -->
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    <!-- Contenido del sitio web y sección principal -->
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2 text-center text-light font-monospace"
         tabindex="0">
-
         <!-- Título principal-->
         <h1 class="fw-bold">Personas relacionadas con la Luna</h1>
-
-        <!-- Sección principal -->
-        <main>
-            <!-- Título de la sección principal -->
-            <h2 id="astronaut" class="fw-bold">Astronautas</h2>
-            <!-- Subtítulo de la sección principal -->
-            <h4>Estos son los hombres que han estado en la Luna</h4>
-            <!-- Sección de las astronautas -->
-            <section class="people-section">
-
-                <div class="row row-cols-1 row-cols-md-6 justify-content-center g-4 text-dark">
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/Neil_Armstrong_pose.jpg" class="card-img-top"
-                                alt="Imagen de Neil Armstrong">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Neil Armstrong</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 11</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/Buzz_Aldrin_(S69-31743).jpg" class="card-img-top"
-                                alt="Imagen de Buzz Aldrin">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Buzz Aldrin</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 11</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/Conrad-c.jpg" class="card-img-top" alt="Imagen de Charles Conrad">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Charles Conrad</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 12</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/Alan_Bean_NASA_portrait_(S69-38859).jpg" class="card-img-top"
-                                alt="Imagen de Alan Bean">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Alan Bean</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 12</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/379px-Alan_shepard.jpg" class="card-img-top"
-                                alt="Imagen de Alan Shepard">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Alan Shepard</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 14</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/Edgar_Dean_Mitchell.jpg" class="card-img-top"
-                                alt="Imagen de Edgar Mitchell">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Edgar Mitchell</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 14</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/Dave_Scott_Apollo_15_CDR.jpg" class="card-img-top"
-                                alt="Imagen de David Scott">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">David Scott</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 15</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/Jim_Irwin_Apollo_15_LMP.jpg" class="card-img-top"
-                                alt="Imagen de James Irwin">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">James Irwin</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 15</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/384px-John_Watts_Young.jpg" class="card-img-top"
-                                alt="Imagen de John Young">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">John Young</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 16</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/Official_NASA_portrait_Charles_Moss_Duke_Jr.jpg" class="card-img-top"
-                                alt="Imagen de Charles Duke">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Charles Duke</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 16</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/384px-Cernan_s71-51308.jpg" class="card-img-top"
-                                alt="Imagen de Gene Cernan">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Gene Cernan</h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 17</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <!-- Card con contenido de los datos del astronauta -->
-                        <div class="card text-bg-dark">
-                            <!-- Imagen del astronauta-->
-                            <img src="./images/384px-Harrison_Schmitt.jpg" class="card-img-top"
-                                alt="Imagen de Harrison Schmitt">
-                            <!-- Cuerpo de la card con la información del astronauta -->
-                            <div class="card-body">
-                                <!-- Título con el nombre del astronauta -->
-                                <h5 class="card-title fw-bold">Harrison Schmitt
-                                </h5>
-                                <!-- Párrafo con la misión del astronauta -->
-                                <p class="card-text"><b>Misión:</b> Apolo 17</p>
-                            </div>
+        <!-- Título de la sección principal -->
+        <h2 id="astronaut" class="fw-bold">Astronautas</h2>
+        <!-- Subtítulo de la sección principal -->
+        <h4>Personas que han estado en la Luna</h4>
+        <!-- Sección de los astronautas (Contenedor) -->
+        <section class="container-fluid">
+            <!-- Fila del contenedor con las cards -->
+            <div class="row row-cols-1 row-cols-md-6 justify-content-center g-4 text-dark">
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/Neil_Armstrong_pose.jpg" class="card-img-top" alt="Imagen de Neil Armstrong">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Neil Armstrong</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 11</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Contenedor del link de anexo -->
-            <div class="row">
-                <div>
-                    <!-- Hyperlink hacía la información detallada de los astronautas -->
-                    <a class="anexo-inf-people-section"
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/Buzz_Aldrin_(S69-31743).jpg" class="card-img-top"
+                            alt="Imagen de Buzz Aldrin">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Buzz Aldrin</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 11</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/Conrad-c.jpg" class="card-img-top" alt="Imagen de Charles Conrad">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Charles Conrad</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/Alan_Bean_NASA_portrait_(S69-38859).jpg" class="card-img-top"
+                            alt="Imagen de Alan Bean">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Alan Bean</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/379px-Alan_shepard.jpg" class="card-img-top" alt="Imagen de Alan Shepard">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Alan Shepard</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/Edgar_Dean_Mitchell.jpg" class="card-img-top" alt="Imagen de Edgar Mitchell">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Edgar Mitchell</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/Dave_Scott_Apollo_15_CDR.jpg" class="card-img-top"
+                            alt="Imagen de David Scott">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">David Scott</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/Jim_Irwin_Apollo_15_LMP.jpg" class="card-img-top"
+                            alt="Imagen de James Irwin">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">James Irwin</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/384px-John_Watts_Young.jpg" class="card-img-top" alt="Imagen de John Young">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">John Young</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 16</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/Official_NASA_portrait_Charles_Moss_Duke_Jr.jpg" class="card-img-top"
+                            alt="Imagen de Charles Duke">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Charles Duke</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 16</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/384px-Cernan_s71-51308.jpg" class="card-img-top" alt="Imagen de Gene Cernan">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Gene Cernan</h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 17</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- Card con contenido de los datos del astronauta -->
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del astronauta-->
+                        <img src="./images/384px-Harrison_Schmitt.jpg" class="card-img-top"
+                            alt="Imagen de Harrison Schmitt">
+                        <!-- Cuerpo de la card con la información del astronauta -->
+                        <div class="card-body">
+                            <!-- Título con el nombre del astronauta -->
+                            <h5 class="card-title fw-bold">Harrison Schmitt
+                            </h5>
+                            <!-- Párrafo con la misión del astronauta -->
+                            <p class="card-text"><b>Misión:</b> Apolo 17</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila del contenedor del link de anexo -->
+            <div class="row my-3">
+                <!-- Columna del contenedor del link de anexo -->
+                <div class="col">
+                    <!-- Hyperlink hacía la información detallada de los astronautas con estilos de botón de Bootstrap -->
+                    <a class="btn btn-light"
                         href="https://es.wikipedia.org/wiki/Anexo:Personas_que_han_caminado_sobre_la_Luna"
                         target="_blank">Anexo</a>
                 </div>
             </div>
-        </main>
+        </section>
         <!-- Título de la sección de astrónomos -->
         <h2 id="astronomers" class="fw-bold">Astrónomos</h2>
         <!-- Subtítulo de la sección de astrónomos -->
-        <h3 class="section-subtitle">Algunas de las personas que realizaron investigaciones lunares</h3>
-        <!-- Sección de los astrónomos -->
-        <section class="investigators-section">
+        <h4 class="section-subtitle">Algunas de las personas que realizaron investigaciones lunares</h4>
+        <!-- Sección de los astrónomos (Contenedor) -->
+        <section class="container-fluid">
             <!-- Contenedor del contenido del astrónomo -->
-            <div class="container-investigator-section">
-                <!-- Imagen del contenido del astrónomo -->
-                <img class="img-investigator-section" src="./images/JKepler.jpg" alt="Imagen de Johannes Kepler">
-                <!-- Contenido del astrónomo -->
-                <div class="inf-investigator-section">
+            <div class="row align-items-center my-2">
+                <div class="col-sm-12 col-md-2">
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del contenido del astrónomo -->
+                        <img src="./images/JKepler.jpg" class="card-img-top" alt="Imagen de Johannes Kepler">
+                    </div>
+                </div>
+                <!-- Columna  -->
+                <div class="col-sm-12 col-md-10 my-2">
                     <!-- Nombre del astrónomo -->
                     <h3>Johannes Kepler</h3>
                     <!-- Párrafo con información del astrónomo -->
-                    <p>Johannes Kepler tuvo importancia en la fundación de la nueva ciencia dedicada al estudio de la
+                    <p>Tuvo importancia en la fundación de la nueva ciencia dedicada al estudio de la
                         Luna
                         denominada Selenografía,
                         pues sus principios sobre el telescopio astronómico sirvieron a Galileo a elaborar sus trabajos,
@@ -329,16 +324,20 @@
                 </div>
             </div>
             <!-- Contenedor del contenido del astrónomo -->
-            <div class="container-investigator-section">
-                <!-- Imagen del contenido del astrónomo -->
-                <img class="img-investigator-section" src="./images/230px-Johann_Hieronymus_Schröter.png"
-                    alt="Imagen de Johann Schröter">
-                <!-- Contenido del astrónomo -->
-                <div class="inf-investigator-section">
+            <div class="row align-items-center my-2">
+                <div class="col-sm-12 col-md-2">
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del contenido del astrónomo -->
+                        <img src="./images/230px-Johann_Hieronymus_Schröter.png" class="card-img-top"
+                            alt="Imagen de Johann Schröter">
+                    </div>
+                </div>
+                <!-- Columna  -->
+                <div class="col-sm-12 col-md-10 my-2">
                     <!-- Nombre del astrónomo -->
                     <h3>Johann Schröter</h3>
                     <!-- Párrafo con información del astrónomo -->
-                    <p>Hacia 1778 Johann Schröter, magistrado supremo de la ciudad de Lilienthal, estudió la Luna y
+                    <p>Hacia 1778, magistrado supremo de la ciudad de Lilienthal, estudió la Luna y
                         realizó
                         cientos de
                         observaciones muy detalladas de las fisuras y grietas que observaba, utilizando para ello
@@ -356,18 +355,22 @@
                 </div>
             </div>
             <!-- Contenedor del contenido del astrónomo -->
-            <div class="container-investigator-section">
-                <!-- Imagen del contenido del astrónomo -->
-                <img class="img-investigator-section" src="./images/Julio_Garavito_Armero.gif"
-                    alt="Imagen de Julio Garavito">
-                <!-- Contenido del astrónomo -->
-                <div class="inf-investigator-section">
+            <div class="row align-items-center my-2">
+                <div class="col-sm-12 col-md-2">
+                    <div class="card text-bg-dark">
+                        <!-- Imagen del contenido del astrónomo -->
+                        <img src="./images/Julio_Garavito_Armero.gif" class="card-img-top"
+                            alt="Imagen de Julio Garavito">
+                    </div>
+                </div>
+                <!-- Columna  -->
+                <div class="col-sm-12 col-md-10 my-2">
                     <!-- Nombre del astrónomo -->
                     <h3>Julio Garavito</h3>
                     <!-- Párrafo con información del astrónomo -->
-                    <p>Julio Garavito Armero fue un astrónomo,
+                    <p>Fue un astrónomo,
                         matemático, economista,
-                        poeta e ingeniero colombiano. Sus investigaciones contribuyeron al desarrollo de las ciencias en
+                        poeta e ingeniero Colombiano. Sus investigaciones contribuyeron al desarrollo de las ciencias en
                         Colombia durante el
                         siglo xix. Ha sido situado al mismo nivel de otros dos importantes científicos neogranadinos del
                         siglo xix, José
@@ -380,8 +383,7 @@
                 </div>
             </div>
         </section>
-    </div>
-
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
