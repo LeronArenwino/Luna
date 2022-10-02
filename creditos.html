@@ -7,7 +7,6 @@
 <head>
     <!-- Sirve para que el navegador entienda caracteres especiales -->
     <meta charset="UTF-8">
-    <!--  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Permite que proyecto se ajuste al tamaño del dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +16,7 @@
     <title>Inicio - Luna</title>
     <!-- Archivos de estilos y fuente-->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Archivos de CSS necesarios para el funcionamiento de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -24,6 +24,7 @@
 <!-- Todo los elementos interactivos con los que el usuario podrá interactuar -->
 
 <body>
+    <!-- Elementos para mostrar el efecto de estrellas del fondo -->
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
@@ -81,14 +82,14 @@
             </div>
         </nav>
     </header>
-    <!-- Contenedor principal -->
+    <!-- Sección y contenedor principal -->
     <main class="container-fluid py-3 px-3 text-center text-light font-monospace">
         <!-- Título de los créditos -->
         <h1 class="fw-bold">Créditos</h1>
         <!-- Sección de créditos -->
         <section class="row">
             <!-- Contenedor del contenido de créditos -->
-            <div class="col">
+            <div class="col-12">
                 <!-- Párrafo de los créditos con bold -->
                 <p><b>Realizado por:</b> Francisco Sebastian Dueñas Caicedo</p>
                 <!-- Párrafo de los créditos con bold e hyperlinks -->
@@ -99,144 +100,210 @@
                 <p><b>Imágenes tomadas de:</b> Páginas web <a class="credit-link"
                         href="https://es.wikipedia.org/wiki/Luna" target="_blank">Wikipedia</a> y <a class="credit-link"
                         href="https://moon.nasa.gov/" target="_blank">NASA</a></p>
+                <!-- Párrafo de los créditos con bold e hyperlinks -->
+                <p><b>Video tomado de:</b> Página web <a class="credit-link"
+                        href="https://moon.nasa.gov/moon-in-motion/eclipses/" target="_blank">NASA</a>
+                </p>
             </div>
         </section>
-        <h1 class="fw-bold mt-4">Mapa de navegación</h3>
-            <section class="row justify-content-center">
-                <div class="col-sm-12 col-md-4 col-xl-2">
-                    <div class="accordion" id="accordionInicio">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingInicio">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseInicio" aria-expanded="true"
-                                    aria-controls="collapseInicio">
-                                    Inicio
-                                </button>
-                            </h2>
-                            <div id="collapseInicio" class="accordion-collapse collapse show"
-                                aria-labelledby="headingInicio" data-bs-parent="#accordionInicio">
-                                <div class="accordion-body">
-                                    <ol class="list-group list-group-numbered">
-                                        <li class="list-group-item">Idea general del sitio web</li>
-                                    </ol>
-                                </div>
+        <!-- Título del mapa de navegación -->
+        <h1 class="fw-bold mt-4">Mapa de navegación</h1>
+        <!-- Fila del contenedor que justifica sus elementos al centro y tiene un margen superior e inferior de 2 -->
+        <section class="row my-2 justify-content-center">
+            <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
+            <div class="col-sm-12 col-md-4 col-xl-2 my-2">
+                <!-- Acordeón del mapa de navegación (Inicio) -->
+                <div class="accordion" id="accordionInicio">
+                    <!-- Elemento del acordeón -->
+                    <div class="accordion-item">
+                        <!-- Título que contiene el botón del acordeón -->
+                        <h2 class="accordion-header" id="headingInicio">
+                            <!-- Botón que despliega el acordeón -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseInicio" aria-expanded="true" aria-controls="collapseInicio">
+                                Inicio
+                            </button>
+                        </h2>
+                        <!-- Elemento que se despliega -->
+                        <div id="collapseInicio" class="accordion-collapse collapse show"
+                            aria-labelledby="headingInicio" data-bs-parent="#accordionInicio">
+                            <!-- Cuerpo del acordeón con los elementos de la lista -->
+                            <div class="accordion-body">
+                                <!-- Elemento lista ordenada -->
+                                <ol class="list-group list-group-numbered">
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Idea general del sitio web</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-xl-2">
-                    <div class="accordion" id="accordionUbicacion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingUbicacion">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseUbicacion" aria-expanded="true"
-                                    aria-controls="collapseUbicacion">
-                                    Ubicación
-                                </button>
-                            </h2>
-                            <div id="collapseUbicacion" class="accordion-collapse collapse show"
-                                aria-labelledby="headingUbicacion" data-bs-parent="#accordionUbicacion">
-                                <div class="accordion-body">
-                                    <ol class="list-group list-group-numbered">
-                                        <li class="list-group-item">Ubicación de la Luna</li>
-                                        <li class="list-group-item">Terreno lunar</li>
-                                        <li class="list-group-item">Datos físicos</li>
-                                    </ol>
-                                </div>
+            </div>
+            <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
+            <div class="col-sm-12 col-md-4 col-xl-2 my-2">
+                <!-- Acordeón del mapa de navegación (Ubicación) -->
+                <div class="accordion" id="accordionUbicacion">
+                    <!-- Elemento del acordeón -->
+                    <div class="accordion-item">
+                        <!-- Título que contiene el botón del acordeón -->
+                        <h2 class="accordion-header" id="headingUbicacion">
+                            <!-- Botón que despliega el acordeón -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUbicacion" aria-expanded="true"
+                                aria-controls="collapseUbicacion">
+                                Ubicación
+                            </button>
+                        </h2>
+                        <!-- Elemento que se despliega -->
+                        <div id="collapseUbicacion" class="accordion-collapse collapse show"
+                            aria-labelledby="headingUbicacion" data-bs-parent="#accordionUbicacion">
+                            <!-- Cuerpo del acordeón con los elementos de la lista -->
+                            <div class="accordion-body">
+                                <!-- Elemento lista ordenada -->
+                                <ol class="list-group list-group-numbered">
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Ubicación de la Luna</li>
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Terreno lunar</li>
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Datos físicos</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-xl-2">
-                    <div class="accordion" id="accordionPersonas">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingPersonas">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsePersonas" aria-expanded="true"
-                                    aria-controls="collapsePersonas">
-                                    Personas
-                                </button>
-                            </h2>
-                            <div id="collapsePersonas" class="accordion-collapse collapse show"
-                                aria-labelledby="headingPersonas" data-bs-parent="#accordionPersonas">
-                                <div class="accordion-body">
-                                    <ol class="list-group list-group-numbered">
-                                        <li class="list-group-item">Astronautas</li>
-                                        <li class="list-group-item">Astrónomos</li>
-                                    </ol>
-                                </div>
+            </div>
+            <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
+            <div class="col-sm-12 col-md-4 col-xl-2 my-2">
+                <!-- Acordeón del mapa de navegación (Personas) -->
+                <div class="accordion" id="accordionPersonas">
+                    <!-- Elemento del acordeón -->
+                    <div class="accordion-item">
+                        <!-- Título que contiene el botón del acordeón -->
+                        <h2 class="accordion-header" id="headingPersonas">
+                            <!-- Botón que despliega el acordeón -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePersonas" aria-expanded="true"
+                                aria-controls="collapsePersonas">
+                                Personas
+                            </button>
+                        </h2>
+                        <!-- Elemento que se despliega -->
+                        <div id="collapsePersonas" class="accordion-collapse collapse show"
+                            aria-labelledby="headingPersonas" data-bs-parent="#accordionPersonas">
+                            <!-- Cuerpo del acordeón con los elementos de la lista -->
+                            <div class="accordion-body">
+                                <!-- Elemento lista ordenada -->
+                                <ol class="list-group list-group-numbered">
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Astronautas</li>
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Astrónomos</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-xl-2">
-                    <div class="accordion" id="accordionActividades">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingActividades">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseActividades" aria-expanded="true"
-                                    aria-controls="collapseActividades">
-                                    Actividades
-                                </button>
-                            </h2>
-                            <div id="collapseActividades" class="accordion-collapse collapse show"
-                                aria-labelledby="headingActividades" data-bs-parent="#accordionActividades">
-                                <div class="accordion-body">
-                                    <ol class="list-group list-group-numbered">
-                                        <li class="list-group-item">Fases lunares</li>
-                                        <li class="list-group-item">Eclipses lunares</li>
-                                        <li class="list-group-item">Eclipses solares</li>
-                                    </ol>
-                                </div>
+            </div>
+            <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
+            <div class="col-sm-12 col-md-4 col-xl-2 my-2">
+                <!-- Acordeón del mapa de navegación (Actividades) -->
+                <div class="accordion" id="accordionActividades">
+                    <!-- Elemento del acordeón -->
+                    <div class="accordion-item">
+                        <!-- Título que contiene el botón del acordeón -->
+                        <h2 class="accordion-header" id="headingActividades">
+                            <!-- Botón que despliega el acordeón -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseActividades" aria-expanded="true"
+                                aria-controls="collapseActividades">
+                                Actividades
+                            </button>
+                        </h2>
+                        <!-- Elemento que se despliega -->
+                        <div id="collapseActividades" class="accordion-collapse collapse show"
+                            aria-labelledby="headingActividades" data-bs-parent="#accordionActividades">
+                            <!-- Cuerpo del acordeón con los elementos de la lista -->
+                            <div class="accordion-body">
+                                <!-- Elemento lista ordenada -->
+                                <ol class="list-group list-group-numbered">
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Fases lunares</li>
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Eclipses lunares</li>
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Eclipses solares</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-xl-2">
-                    <div class="accordion" id="accordionHistoria">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingHistoria">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseHistoria" aria-expanded="true"
-                                    aria-controls="collapseHistoria">
-                                    Historia
-                                </button>
-                            </h2>
-                            <div id="collapseHistoria" class="accordion-collapse collapse show"
-                                aria-labelledby="headingHistoria" data-bs-parent="#accordionHistoria">
-                                <div class="accordion-body">
-                                    <ol class="list-group list-group-numbered">
-                                        <li class="list-group-item">Historia de la Luna</li>
-                                    </ol>
-                                </div>
+            </div>
+            <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
+            <div class="col-sm-12 col-md-4 col-xl-2 my-2">
+                <!-- Acordeón del mapa de navegación (Historia) -->
+                <div class="accordion" id="accordionHistoria">
+                    <!-- Elemento del acordeón -->
+                    <div class="accordion-item">
+                        <!-- Título que contiene el botón del acordeón -->
+                        <h2 class="accordion-header" id="headingHistoria">
+                            <!-- Botón que despliega el acordeón -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseHistoria" aria-expanded="true"
+                                aria-controls="collapseHistoria">
+                                Historia
+                            </button>
+                        </h2>
+                        <!-- Elemento que se despliega -->
+                        <div id="collapseHistoria" class="accordion-collapse collapse show"
+                            aria-labelledby="headingHistoria" data-bs-parent="#accordionHistoria">
+                            <!-- Cuerpo del acordeón con los elementos de la lista -->
+                            <div class="accordion-body">
+                                <!-- Elemento lista ordenada -->
+                                <ol class="list-group list-group-numbered">
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Historia de la Luna</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-xl-2">
-                    <div class="accordion" id="accordionCreditos">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingCreditos">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseCreditos" aria-expanded="true"
-                                    aria-controls="collapseCreditos">
-                                    Creditos
-                                </button>
-                            </h2>
-                            <div id="collapseCreditos" class="accordion-collapse collapse show"
-                                aria-labelledby="headingCreditos" data-bs-parent="#accordionCreditos">
-                                <div class="accordion-body">
-                                    <ol class="list-group list-group-numbered">
-                                        <li class="list-group-item">Creditos</li>
-                                        <li class="list-group-item">Mapa de navegación</li>
-                                    </ol>
-                                </div>
+            </div>
+            <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
+            <div class="col-sm-12 col-md-4 col-xl-2 my-2">
+                <!-- Acordeón del mapa de navegación (Creditos) -->
+                <div class="accordion" id="accordionCreditos">
+                    <!-- Elemento del acordeón -->
+                    <div class="accordion-item">
+                        <!-- Título que contiene el botón del acordeón -->
+                        <h2 class="accordion-header" id="headingCreditos">
+                            <!-- Botón que despliega el acordeón -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCreditos" aria-expanded="true"
+                                aria-controls="collapseCreditos">
+                                Creditos
+                            </button>
+                        </h2>
+                        <!-- Elemento que se despliega -->
+                        <div id="collapseCreditos" class="accordion-collapse collapse show"
+                            aria-labelledby="headingCreditos" data-bs-parent="#accordionCreditos">
+                            <!-- Cuerpo del acordeón con los elementos de la lista -->
+                            <div class="accordion-body">
+                                <!-- Elemento lista ordenada -->
+                                <ol class="list-group list-group-numbered">
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Creditos</li>
+                                    <!-- Elemento de la lista ordenada -->
+                                    <li class="list-group-item">Mapa de navegación</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
+    <!-- Script necesario para el funcionamiento de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
