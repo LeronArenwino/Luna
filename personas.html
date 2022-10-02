@@ -7,7 +7,6 @@
 <head>
     <!-- Sirve para que el navegador entienda caracteres especiales -->
     <meta charset="UTF-8">
-    <!--  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Permite que proyecto se ajuste al tamaño del dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +14,7 @@
     <title>Personas - Luna</title>
     <!-- Archivos de estilos y fuente-->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Archivos de CSS necesarios para el funcionamiento de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -22,10 +22,11 @@
 <!-- Todo los elementos que componen el sitio web -->
 
 <body>
+    <!-- Elementos para mostrar el efecto de estrellas del fondo -->
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
-    <!-- Header de navegación del sitio web -->
+    <!-- Header de navegación del sitio web fijo en la parte superior y con fuente Monospace -->
     <header class="sticky-top font-monospace">
         <!-- Elemento de navegación del sitio web -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
@@ -95,7 +96,7 @@
             </ul>
         </nav>
     </header>
-    <!-- Contenido del sitio web y sección principal -->
+    <!-- Sección y contenedor principal con un ancho del 100%, un padding superior e inferior, lateral izquierdo y derecho de 3, con texto centrado, color blanco y fuente Monospace, con un Scrollpy del contenido -->
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2 text-center text-light font-monospace"
         tabindex="0">
@@ -105,10 +106,11 @@
         <h2 id="astronaut" class="fw-bold">Astronautas</h2>
         <!-- Subtítulo de la sección principal -->
         <h4>Personas que han estado en la Luna</h4>
-        <!-- Sección de los astronautas (Contenedor) -->
+        <!-- Sección de los astronautas (Contenedor con un ancho del 100%) -->
         <section class="container-fluid">
-            <!-- Fila del contenedor con las cards -->
+            <!-- Fila del contenedor con las cards, definiendo una columna para dispositivos sm o de menor tamañao y 6 columnas para dispositivos de tamaño md o mayores y texto de color negro -->
             <div class="row row-cols-1 row-cols-md-6 justify-content-center g-4 text-dark">
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -123,6 +125,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -138,6 +141,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -152,6 +156,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -167,6 +172,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -181,6 +187,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -195,6 +202,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -210,6 +218,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -225,6 +234,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -239,6 +249,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -254,6 +265,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -268,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Columna del contenedor -->
                 <div class="col">
                     <!-- Card con contenido de los datos del astronauta -->
                     <div class="card text-bg-dark">
@@ -300,18 +312,19 @@
         <!-- Título de la sección de astrónomos -->
         <h2 id="astronomers" class="fw-bold">Astrónomos</h2>
         <!-- Subtítulo de la sección de astrónomos -->
-        <h4 class="section-subtitle">Algunas de las personas que realizaron investigaciones lunares</h4>
+        <h4>Algunas de las personas que realizaron investigaciones lunares</h4>
         <!-- Sección de los astrónomos (Contenedor) -->
         <section class="container-fluid">
-            <!-- Contenedor del contenido del astrónomo -->
+            <!-- Fila del contenedor con el contenido del astrónomo con margen superior e inferior de 2 -->
             <div class="row align-items-center my-2">
+                <!-- Columna del contenedor con la imagen de un astrónomo que cambia su tamaño dependiendo del breakpoint -->
                 <div class="col-sm-12 col-md-2">
                     <div class="card text-bg-dark">
                         <!-- Imagen del contenido del astrónomo -->
                         <img src="./images/JKepler.jpg" class="card-img-top" alt="Imagen de Johannes Kepler">
                     </div>
                 </div>
-                <!-- Columna  -->
+                <!-- Columna del contenedor con la información de un astrónomo que cambia su tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
                 <div class="col-sm-12 col-md-10 my-2">
                     <!-- Nombre del astrónomo -->
                     <h3>Johannes Kepler</h3>
@@ -328,8 +341,9 @@
                         año 1645.</p>
                 </div>
             </div>
-            <!-- Contenedor del contenido del astrónomo -->
+            <!-- Fila del contenedor con el contenido del astrónomo con margen superior e inferior de 2 -->
             <div class="row align-items-center my-2">
+                <!-- Columna del contenedor con la imagen de un astrónomo que cambia su tamaño dependiendo del breakpoint -->
                 <div class="col-sm-12 col-md-2">
                     <div class="card text-bg-dark">
                         <!-- Imagen del contenido del astrónomo -->
@@ -337,7 +351,7 @@
                             alt="Imagen de Johann Schröter">
                     </div>
                 </div>
-                <!-- Columna  -->
+                <!-- Columna del contenedor con la información de un astrónomo que cambia su tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
                 <div class="col-sm-12 col-md-10 my-2">
                     <!-- Nombre del astrónomo -->
                     <h3>Johann Schröter</h3>
@@ -359,8 +373,9 @@
                         metálico del objetivo.</p>
                 </div>
             </div>
-            <!-- Contenedor del contenido del astrónomo -->
+            <!-- Fila del contenedor con el contenido del astrónomo con margen superior e inferior de 2 -->
             <div class="row align-items-center my-2">
+                <!-- Columna del contenedor con la imagen de un astrónomo que cambia su tamaño dependiendo del breakpoint -->
                 <div class="col-sm-12 col-md-2">
                     <div class="card text-bg-dark">
                         <!-- Imagen del contenido del astrónomo -->
@@ -368,7 +383,7 @@
                             alt="Imagen de Julio Garavito">
                     </div>
                 </div>
-                <!-- Columna  -->
+                <!-- Columna del contenedor con la información de un astrónomo que cambia su tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 2 -->
                 <div class="col-sm-12 col-md-10 my-2">
                     <!-- Nombre del astrónomo -->
                     <h3>Julio Garavito</h3>
@@ -389,6 +404,7 @@
             </div>
         </section>
     </main>
+    <!-- Script necesario para el funcionamiento de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
