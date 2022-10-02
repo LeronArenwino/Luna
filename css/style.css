@@ -573,3 +573,14 @@ body {
         transform: translateY(-2000px);
     }
 }
+
+video {
+    width: 60%;
+    height: auto;
+}
+
+@media only screen and (max-width: 576px) {
+    video {
+        width: 100%;
+    }
+}
