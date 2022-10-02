@@ -7,7 +7,6 @@
 <head>
     <!-- Sirve para que el navegador entienda caracteres especiales -->
     <meta charset="UTF-8">
-    <!--  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Permite que proyecto se ajuste al tamaño del dispositivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +14,7 @@
     <title>Ubicación - Luna</title>
     <!-- Archivos de estilos y fuente-->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Archivos de CSS necesarios para el funcionamiento de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -22,10 +22,11 @@
 <!-- Todo los elementos interactivos con los que el usuario podrá interactuar -->
 
 <body>
+    <!-- Elementos para mostrar el efecto de estrellas del fondo -->
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
-    <!-- Header de navegación del sitio web -->
+    <!-- Header de navegación del sitio web fijo en la parte superior y con fuente Monospace -->
     <header class="sticky-top font-monospace">
         <!-- Elemento de navegación del sitio web -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
@@ -79,67 +80,61 @@
             </div>
         </nav>
     </header>
-
-    <div class="container-fluid py-3 px-3 text-center text-light font-monospace">
+    <!-- Sección y contenedor principal con un ancho del 100%, un padding superior e inferior, lateral izquierdo y derecho de 3, con texto centrado, color blanco y fuente Monospace-->
+    <main class="container-fluid py-3 px-3 text-center text-light font-monospace">
         <!-- Título principal-->
         <h1 class="fw-bold">Historía de la Luna</h1>
-        <!-- Sección principal -->
-        <main>
-            <!-- Sección de historia -->
-            <section class="history-section">
-                <!-- Contenedor del contenido de historia -->
-                <div class="container-section">
-                    <!-- Subcontenedor del contenido de historia -->
-                    <div class="inf-section">
-                        <!-- Párrafo de la historia -->
-                        <p>Desde tiempos inmemoriales la Luna sorprendió a la humanidad con su gran tamaño, sus ciclos
-                            orbitales y sus fases. Fue
-                            uno de los dos cuerpos más importantes junto con el Sol y su periodicidad sirvió como
-                            calendario
-                            en muchas culturas. En
-                            Irlanda se ha encontrado una roca de hace 5000 años que parece ser la representación más
-                            temprana de la Luna descubierta
-                            hasta la fecha.</p>
-                        <!-- Párrafo de la historia -->
-                        <p>En muchas culturas prehistóricas y antiguas, la Luna era una deidad u otro fenómeno
-                            sobrenatural
-                            (por ejemplo, los
-                            kiliwa creen que la Luna es una potencia masculina, y según su propia mitología el dios de
-                            la
-                            Luna Meltí ipá jalá(u)
-                            fue el creador de todo el universo).</p>
-                        <!-- Párrafo de la historia -->
-                        <p>Una de las primeras veces que se intentó ofrecer una visión racional y científica de lo que
-                            era
-                            la luna fue en la
-                            Antigua Grecia. La propuso el filósofo Anaxágoras quien razonó que tanto el Sol como la Luna
-                            eran dos cuerpos gigantes,
-                            rocosos y esféricos y que la luz emitida por la Luna no era más que luz reflejada del Sol.
-                            Su
-                            idea ateísta del cielo fue
-                            una de las causas de su encarcelamiento y posterior exilio.</p>
-                        <!-- Párrafo de la historia -->
-                        <p>En la Edad Media, antes de la invención del telescopio, cada vez más gente fue reconociendo
-                            que
-                            la Luna era una esfera
-                            ya que se creía que tenía que ser «perfectamente lisa».</p>
-                        <!-- Párrafo de la historia -->
-                        <p>En 1609, Galileo Galilei observó por primera vez la Luna con telescopio y afirmó, en su
-                            libro
-                            Sidereus Nuncius (El
-                            mensajero celeste), que no era lisa ya que tenía cráteres. Más tarde, también en el siglo
-                            XVII,
-                            Giovanni Battista
-                            Riccioli y Francesco Maria Grimaldi trazaron un mapa de la Luna y dieron nombre a muchos de
-                            esos
-                            cráteres, nombres que
-                            se mantienen hoy día.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
+        <!-- Fila del contenedor -->
+        <section class="row">
+            <!-- Columna del contenedor del contenido de historia -->
+            <div class="col-12">
+                <!-- Párrafo de la historia -->
+                <p>Desde tiempos inmemoriales la Luna sorprendió a la humanidad con su gran tamaño, sus ciclos
+                    orbitales y sus fases. Fue
+                    uno de los dos cuerpos más importantes junto con el Sol y su periodicidad sirvió como
+                    calendario
+                    en muchas culturas. En
+                    Irlanda se ha encontrado una roca de hace 5000 años que parece ser la representación más
+                    temprana de la Luna descubierta
+                    hasta la fecha.</p>
+                <!-- Párrafo de la historia -->
+                <p>En muchas culturas prehistóricas y antiguas, la Luna era una deidad u otro fenómeno
+                    sobrenatural
+                    (por ejemplo, los
+                    kiliwa creen que la Luna es una potencia masculina, y según su propia mitología el dios de
+                    la
+                    Luna Meltí ipá jalá(u)
+                    fue el creador de todo el universo).</p>
+                <!-- Párrafo de la historia -->
+                <p>Una de las primeras veces que se intentó ofrecer una visión racional y científica de lo que
+                    era
+                    la luna fue en la
+                    Antigua Grecia. La propuso el filósofo Anaxágoras quien razonó que tanto el Sol como la Luna
+                    eran dos cuerpos gigantes,
+                    rocosos y esféricos y que la luz emitida por la Luna no era más que luz reflejada del Sol.
+                    Su
+                    idea ateísta del cielo fue
+                    una de las causas de su encarcelamiento y posterior exilio.</p>
+                <!-- Párrafo de la historia -->
+                <p>En la Edad Media, antes de la invención del telescopio, cada vez más gente fue reconociendo
+                    que
+                    la Luna era una esfera
+                    ya que se creía que tenía que ser «perfectamente lisa».</p>
+                <!-- Párrafo de la historia -->
+                <p>En 1609, Galileo Galilei observó por primera vez la Luna con telescopio y afirmó, en su
+                    libro
+                    Sidereus Nuncius (El
+                    mensajero celeste), que no era lisa ya que tenía cráteres. Más tarde, también en el siglo
+                    XVII,
+                    Giovanni Battista
+                    Riccioli y Francesco Maria Grimaldi trazaron un mapa de la Luna y dieron nombre a muchos de
+                    esos
+                    cráteres, nombres que
+                    se mantienen hoy día.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Script necesario para el funcionamiento de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
