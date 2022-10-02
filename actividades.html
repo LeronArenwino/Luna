@@ -103,157 +103,160 @@
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2 text-center text-light font-monospace"
         tabindex="0">
-        <!-- Título principal-->
+        <!-- Título principal -->
         <h1 class="fw-bold">Actividades relacionadas con la Luna</h1>
         <!-- Título de la sección de fases lunares -->
         <h2 id="phases" class="fw-bold">Fases lunares</h2>
-        <!-- Sección de las fases lunares -->
-        <section>
-            <!-- Contenedor del contenido de las fases lunares -->
-            <div class="activities-section">
-                <!-- Contenido de una fase lunar -->
-                <div class="container-section">
-                    <!-- Información de una fase lunar -->
-                    <div class="inf-section">
-                        <!-- Título de una fase lunar -->
-                        <h3>Luna nueva</h3>
-                        <!-- Párrafo con la descripción de una fase lunar -->
-                        <p>Esta es la fase invisible de la Luna, con el lado iluminado de la Luna frente al Sol y el
-                            lado nocturno frente a la
-                            Tierra. En esta fase, la Luna está en la misma parte del cielo que el Sol y sale y se
-                            pone
-                            con el Sol. ¡El lado
-                            iluminado no solo está de espaldas a la Tierra, sino que también está encendido durante
-                            el
-                            día! Recuerda, en esta fase,
-                            la Luna no suele pasar directamente entre la Tierra y el Sol, debido a la inclinación de
-                            la
-                            órbita de la Luna. Solo pasa
-                            cerca del Sol desde nuestra perspectiva en la Tierra.</p>
+        <!-- Sección de las fases lunares (Contenedor con ancho del 100%) -->
+        <section class="container-fluid">
+            <!-- Fila del contenedor de una de las fases lunares que alinea los elementos al centro -->
+            <div class="row align-items-center my-2">
+                <!-- Columna del contenedor con la información de una de las fases lunares que cambia su tamaño dependiendo del breakpoint -->
+                <div class="col-sm-12 col-md-8 col-xl-10">
+                    <!-- Título de una fase lunar -->
+                    <h3>Luna nueva</h3>
+                    <!-- Párrafo con la descripción de una fase lunar -->
+                    <p>Esta es la fase invisible de la Luna, con el lado iluminado de la Luna frente al Sol y el
+                        lado nocturno frente a la
+                        Tierra. En esta fase, la Luna está en la misma parte del cielo que el Sol y sale y se
+                        pone
+                        con el Sol. ¡El lado
+                        iluminado no solo está de espaldas a la Tierra, sino que también está encendido durante
+                        el
+                        día! Recuerda, en esta fase,
+                        la Luna no suele pasar directamente entre la Tierra y el Sol, debido a la inclinación de
+                        la
+                        órbita de la Luna. Solo pasa
+                        cerca del Sol desde nuestra perspectiva en la Tierra.</p>
+                </div>
+                <!-- Columna del contenedor de la imagen de una de las fases lunares que cambia su tamaño dependiendo del breakpoint -->
+                <div class="col-sm-12 col-md-4 col-xl-2">
+                    <!-- Card que contiene la imagen para evitar la transparencia del fondo -->
+                    <div class="card text-bg-dark">
                         <!-- Imagen de la fase lunar -->
-                        <img class="img-thumbnail" src="./images/new_moon.jpg" alt="Imagen de Luna nueva">
+                        <img src="./images/new_moon.jpg" class="card-img-top" alt="Imagen de Luna nueva">
                     </div>
                 </div>
-                <!-- Contenido de una fase lunar -->
-                <div class="container-section">
-                    <!-- Información de una fase lunar -->
-                    <div class="inf-section">
-                        <!-- Título de una fase lunar -->
-                        <h3>Luna creciente</h3>
-                        <!-- Párrafo con la descripción de una fase lunar -->
-                        <p>Esta astilla plateada de una Luna ocurre cuando la mitad iluminada de la Luna mira en su
-                            mayor parte hacia el lado
-                            opuesto de la Tierra, con solo una pequeña porción visible para nosotros desde nuestro
-                            planeta. Crece diariamente a
-                            medida que la órbita de la Luna lleva el lado diurno de la Luna más lejos a la vista.
-                            Todos
-                            los días, la Luna sale un
-                            poco más tarde.</p>
-                        <!-- Imagen de la fase lunar -->
-                        <img class="img-section" src="./images/waxing_crescent.jpg" alt="Imagen de Luna creciente">
-                    </div>
+            </div>
+            <!-- Contenido de una fase lunar -->
+            <div class="container-section">
+                <!-- Información de una fase lunar -->
+                <div class="inf-section">
+                    <!-- Título de una fase lunar -->
+                    <h3>Luna creciente</h3>
+                    <!-- Párrafo con la descripción de una fase lunar -->
+                    <p>Esta astilla plateada de una Luna ocurre cuando la mitad iluminada de la Luna mira en su
+                        mayor parte hacia el lado
+                        opuesto de la Tierra, con solo una pequeña porción visible para nosotros desde nuestro
+                        planeta. Crece diariamente a
+                        medida que la órbita de la Luna lleva el lado diurno de la Luna más lejos a la vista.
+                        Todos
+                        los días, la Luna sale un
+                        poco más tarde.</p>
+                    <!-- Imagen de la fase lunar -->
+                    <img class="img-section" src="./images/waxing_crescent.jpg" alt="Imagen de Luna creciente">
                 </div>
-                <!-- Contenido de una fase lunar -->
-                <div class="container-section">
-                    <!-- Información de una fase lunar -->
-                    <div class="inf-section">
-                        <!-- Título de una fase lunar -->
-                        <h3>Primer cuarto</h3>
-                        <!-- Párrafo con la descripción de una fase lunar -->
-                        <p>La Luna está ahora a una cuarta parte de su viaje mensual y ves la mitad de su lado
-                            iluminado. La gente puede llamar a
-                            esto casualmente media luna, pero recuerda, eso no es realmente lo que estás
-                            presenciando en
-                            el cielo. Estás viendo solo
-                            una porción de toda la Luna, la mitad de la mitad iluminada. La luna en cuarto creciente
-                            sale alrededor del mediodía y
-                            se pone alrededor de la medianoche. Está alto en el cielo por la noche y es una
-                            excelente
-                            vista.</p>
-                        <!-- Imagen de la fase lunar -->
-                        <img class="img-section" src="./images/first_quarter.jpg" alt="Imagen de Luna primer cuarto">
-                    </div>
+            </div>
+            <!-- Contenido de una fase lunar -->
+            <div class="container-section">
+                <!-- Información de una fase lunar -->
+                <div class="inf-section">
+                    <!-- Título de una fase lunar -->
+                    <h3>Primer cuarto</h3>
+                    <!-- Párrafo con la descripción de una fase lunar -->
+                    <p>La Luna está ahora a una cuarta parte de su viaje mensual y ves la mitad de su lado
+                        iluminado. La gente puede llamar a
+                        esto casualmente media luna, pero recuerda, eso no es realmente lo que estás
+                        presenciando en
+                        el cielo. Estás viendo solo
+                        una porción de toda la Luna, la mitad de la mitad iluminada. La luna en cuarto creciente
+                        sale alrededor del mediodía y
+                        se pone alrededor de la medianoche. Está alto en el cielo por la noche y es una
+                        excelente
+                        vista.</p>
+                    <!-- Imagen de la fase lunar -->
+                    <img class="img-section" src="./images/first_quarter.jpg" alt="Imagen de Luna primer cuarto">
                 </div>
-                <!-- Contenido de una fase lunar -->
-                <div class="container-section">
-                    <!-- Información de una fase lunar -->
-                    <div class="inf-section">
-                        <!-- Título de una fase lunar -->
-                        <h3>Luna menguante</h3>
-                        <!-- Párrafo con la descripción de una fase lunar -->
-                        <p>Ahora la mayor parte del lado diurno de la Luna se ha hecho visible y la Luna aparece más
-                            brillante en el cielo.</p>
-                        <!-- Imagen de la fase lunar -->
-                        <img class="img-section" src="./images/waxing_gibbous.jpg" alt="Imagen de Luna primer cuarto">
-                    </div>
+            </div>
+            <!-- Contenido de una fase lunar -->
+            <div class="container-section">
+                <!-- Información de una fase lunar -->
+                <div class="inf-section">
+                    <!-- Título de una fase lunar -->
+                    <h3>Luna menguante</h3>
+                    <!-- Párrafo con la descripción de una fase lunar -->
+                    <p>Ahora la mayor parte del lado diurno de la Luna se ha hecho visible y la Luna aparece más
+                        brillante en el cielo.</p>
+                    <!-- Imagen de la fase lunar -->
+                    <img class="img-section" src="./images/waxing_gibbous.jpg" alt="Imagen de Luna primer cuarto">
                 </div>
-                <!-- Contenido de una fase lunar -->
-                <div class="container-section">
-                    <!-- Información de una fase lunar -->
-                    <div class="inf-section">
-                        <!-- Título de una fase lunar -->
-                        <h3>Luna llena</h3>
-                        <!-- Párrafo con la descripción de una fase lunar -->
-                        <p>Esto es lo más cerca que estamos de ver la iluminación del Sol de todo el lado diurno de
-                            la
-                            Luna (así que, técnicamente,
-                            esta sería la verdadera media luna). La Luna está opuesta al Sol, vista desde la Tierra,
-                            revelando el lado diurno de la
-                            Luna. La luna llena sale alrededor del atardecer y se pone alrededor del amanecer. La
-                            Luna
-                            aparecerá llena durante un
-                            par de días antes de pasar a...</p>
-                        <!-- Imagen de la fase lunar -->
-                        <img class="img-section" src="./images/full_moon.jpg" alt="Imagen de Luna primer cuarto">
-                    </div>
+            </div>
+            <!-- Contenido de una fase lunar -->
+            <div class="container-section">
+                <!-- Información de una fase lunar -->
+                <div class="inf-section">
+                    <!-- Título de una fase lunar -->
+                    <h3>Luna llena</h3>
+                    <!-- Párrafo con la descripción de una fase lunar -->
+                    <p>Esto es lo más cerca que estamos de ver la iluminación del Sol de todo el lado diurno de
+                        la
+                        Luna (así que, técnicamente,
+                        esta sería la verdadera media luna). La Luna está opuesta al Sol, vista desde la Tierra,
+                        revelando el lado diurno de la
+                        Luna. La luna llena sale alrededor del atardecer y se pone alrededor del amanecer. La
+                        Luna
+                        aparecerá llena durante un
+                        par de días antes de pasar a...</p>
+                    <!-- Imagen de la fase lunar -->
+                    <img class="img-section" src="./images/full_moon.jpg" alt="Imagen de Luna primer cuarto">
                 </div>
-                <!-- Contenido de una fase lunar -->
-                <div class="container-section">
-                    <!-- Información de una fase lunar -->
-                    <div class="inf-section">
-                        <!-- Título de una fase lunar -->
-                        <h3>Menguante menguante</h3>
-                        <!-- Párrafo con la descripción de una fase lunar -->
-                        <p>A medida que la Luna comienza su viaje de regreso hacia el Sol, el lado opuesto de la
-                            Luna
-                            ahora refleja la luz de la
-                            Luna. El lado iluminado parece encogerse, pero la órbita de la Luna simplemente lo está
-                            ocultando desde nuestra
-                            perspectiva. La Luna sale más y más tarde cada noche.</p>
-                        <!-- Imagen de la fase lunar -->
-                        <img class="img-section" src="./images/waning_gibbous.jpg" alt="Imagen de Luna primer cuarto">
-                    </div>
+            </div>
+            <!-- Contenido de una fase lunar -->
+            <div class="container-section">
+                <!-- Información de una fase lunar -->
+                <div class="inf-section">
+                    <!-- Título de una fase lunar -->
+                    <h3>Menguante menguante</h3>
+                    <!-- Párrafo con la descripción de una fase lunar -->
+                    <p>A medida que la Luna comienza su viaje de regreso hacia el Sol, el lado opuesto de la
+                        Luna
+                        ahora refleja la luz de la
+                        Luna. El lado iluminado parece encogerse, pero la órbita de la Luna simplemente lo está
+                        ocultando desde nuestra
+                        perspectiva. La Luna sale más y más tarde cada noche.</p>
+                    <!-- Imagen de la fase lunar -->
+                    <img class="img-section" src="./images/waning_gibbous.jpg" alt="Imagen de Luna primer cuarto">
                 </div>
-                <!-- Contenido de una fase lunar -->
-                <div class="container-section">
-                    <!-- Información de una fase lunar -->
-                    <div class="inf-section">
-                        <!-- Título de una fase lunar -->
-                        <h3>Último cuarto</h3>
-                        <!-- Párrafo con la descripción de una fase lunar -->
-                        <p>La Luna parece estar medio iluminada desde la perspectiva de la Tierra, pero en realidad
-                            estás viendo la mitad de la
-                            mitad de la Luna que está iluminada por el Sol, o un cuarto. Un último cuarto de luna,
-                            también conocido como tercer
-                            cuarto de luna, sale alrededor de la medianoche y se pone alrededor del mediodía.</p>
-                        <!-- Imagen de la fase lunar -->
-                        <img class="img-section" src="./images/last_quarter.jpg" alt="Imagen de Luna primer cuarto">
-                    </div>
+            </div>
+            <!-- Contenido de una fase lunar -->
+            <div class="container-section">
+                <!-- Información de una fase lunar -->
+                <div class="inf-section">
+                    <!-- Título de una fase lunar -->
+                    <h3>Último cuarto</h3>
+                    <!-- Párrafo con la descripción de una fase lunar -->
+                    <p>La Luna parece estar medio iluminada desde la perspectiva de la Tierra, pero en realidad
+                        estás viendo la mitad de la
+                        mitad de la Luna que está iluminada por el Sol, o un cuarto. Un último cuarto de luna,
+                        también conocido como tercer
+                        cuarto de luna, sale alrededor de la medianoche y se pone alrededor del mediodía.</p>
+                    <!-- Imagen de la fase lunar -->
+                    <img class="img-section" src="./images/last_quarter.jpg" alt="Imagen de Luna primer cuarto">
                 </div>
-                <!-- Contenido de una fase lunar -->
-                <div class="container-section">
-                    <!-- Información de una fase lunar -->
-                    <div class="inf-section">
-                        <!-- Título de una fase lunar -->
-                        <h3>Creciente menguante</h3>
-                        <!-- Párrafo con la descripción de una fase lunar -->
-                        <p>La Luna está casi de regreso al punto de su órbita, donde su lado diurno mira
-                            directamente al
-                            Sol, y todo lo que vemos
-                            desde nuestra perspectiva es una curva delgada.</p>
-                        <!-- Imagen de la fase lunar -->
-                        <img class="img-section" src="./images/waning_crescent.jpg" alt="Imagen de Luna primer cuarto">
-                    </div>
+            </div>
+            <!-- Contenido de una fase lunar -->
+            <div class="container-section">
+                <!-- Información de una fase lunar -->
+                <div class="inf-section">
+                    <!-- Título de una fase lunar -->
+                    <h3>Creciente menguante</h3>
+                    <!-- Párrafo con la descripción de una fase lunar -->
+                    <p>La Luna está casi de regreso al punto de su órbita, donde su lado diurno mira
+                        directamente al
+                        Sol, y todo lo que vemos
+                        desde nuestra perspectiva es una curva delgada.</p>
+                    <!-- Imagen de la fase lunar -->
+                    <img class="img-section" src="./images/waning_crescent.jpg" alt="Imagen de Luna primer cuarto">
                 </div>
             </div>
             <!-- Título de la sección de eclipses lunares -->
