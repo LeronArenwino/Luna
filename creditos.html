@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- Lenguaje del proyecto para posibles traducciones  -->
+<html lang="es">
+
+<!-- Todo lo necesario para que el proyecto funcione -->
+
+<head>
+    <!-- Sirve para que el navegador entienda caracteres especiales -->
+    <meta charset="UTF-8">
+    <!--  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Permite que proyecto se ajuste al tamaño del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Genera un descripción al usuario al momento de realizar una busqueda en el navegador -->
+    <meta name="description" content="Sitio web que describe algunos datos sobre la Luna.">
+    <!-- Titulo de la pestaña del navegador -->
+    <title>Inicio - Luna</title>
+    <!-- Archivos de estilos y fuente-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<!-- Todo los elementos interactivos con los que el usuario podrá interactuar -->
+
+<body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <!-- Header de navegación del sitio web -->
+    <header class="sticky-top font-monospace">
+        <!-- Elemento de navegación del sitio web -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
+            <!-- Elemento para mostrar el brand de la Luna y su ícono -->
+            <a class="navbar-brand">
+                <!-- Ícono de la Luna -->
+                <img src="./images/moon.png" alt="Logo" width="24" height="24"
+                    class="d-inline-block align-text-top mx-2">
+            </a>
+            <!-- Botón para visible en los dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Ícono que se muestra en el botón -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú desplegable en dispositivos móviles -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <!-- Elemento lista desordenada -->
+                <ul class="navbar-nav">
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía el inicio -->
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía la ubicación -->
+                        <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía las personas -->
+                        <a class="nav-link" href="./personas.html">Personas</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía las actividades -->
+                        <a class="nav-link" href="./actividades.html">Actividades</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía la historia -->
+                        <a class="nav-link" href="./historia.html">Historia</a>
+                    </li>
+                    <!-- Elemento de la lista desordenada -->
+                    <li class="nav-item">
+                        <!-- Hyperlink hacía los creditos -->
+                        <a class="nav-link active" aria-current="page" href="./creditos.html">Creditos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Contenedor principal -->
+    <main class="container-fluid py-3 px-3 text-center text-light font-monospace">
+        <!-- Título de los créditos -->
+        <h1 class="fw-bold">Créditos</h1>
+        <!-- Sección de créditos -->
+        <section class="row">
+            <!-- Contenedor del contenido de créditos -->
+            <div class="col">
+                <!-- Párrafo de los créditos con bold -->
+                <p><b>Realizado por:</b> Francisco Sebastian Dueñas Caicedo</p>
+                <!-- Párrafo de los créditos con bold e hyperlinks -->
+                <p><b>Información tomada de:</b> Páginas web <a class="credit-link"
+                        href="https://es.wikipedia.org/wiki/Luna" target="_blank">Wikipedia</a> y <a class="credit-link"
+                        href="https://moon.nasa.gov/" target="_blank">NASA</a></p>
+                <!-- Párrafo de los créditos con bold e hyperlinks -->
+                <p><b>Imágenes tomadas de:</b> Páginas web <a class="credit-link"
+                        href="https://es.wikipedia.org/wiki/Luna" target="_blank">Wikipedia</a> y <a class="credit-link"
+                        href="https://moon.nasa.gov/" target="_blank">NASA</a></p>
+            </div>
+        </section>
+        <h1 class="fw-bold mt-4">Mapa de navegación</h3>
+            <section class="row justify-content-center">
+                <div class="col-sm-12 col-md-4 col-xl-2">
+                    <div class="accordion" id="accordionInicio">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingInicio">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseInicio" aria-expanded="true"
+                                    aria-controls="collapseInicio">
+                                    Inicio
+                                </button>
+                            </h2>
+                            <div id="collapseInicio" class="accordion-collapse collapse show"
+                                aria-labelledby="headingInicio" data-bs-parent="#accordionInicio">
+                                <div class="accordion-body">
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item">Idea general del sitio web</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-2">
+                    <div class="accordion" id="accordionUbicacion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingUbicacion">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseUbicacion" aria-expanded="true"
+                                    aria-controls="collapseUbicacion">
+                                    Ubicación
+                                </button>
+                            </h2>
+                            <div id="collapseUbicacion" class="accordion-collapse collapse show"
+                                aria-labelledby="headingUbicacion" data-bs-parent="#accordionUbicacion">
+                                <div class="accordion-body">
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item">Ubicación de la Luna</li>
+                                        <li class="list-group-item">Terreno lunar</li>
+                                        <li class="list-group-item">Datos físicos</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-2">
+                    <div class="accordion" id="accordionPersonas">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPersonas">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePersonas" aria-expanded="true"
+                                    aria-controls="collapsePersonas">
+                                    Personas
+                                </button>
+                            </h2>
+                            <div id="collapsePersonas" class="accordion-collapse collapse show"
+                                aria-labelledby="headingPersonas" data-bs-parent="#accordionPersonas">
+                                <div class="accordion-body">
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item">Astronautas</li>
+                                        <li class="list-group-item">Astrónomos</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-2">
+                    <div class="accordion" id="accordionActividades">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingActividades">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseActividades" aria-expanded="true"
+                                    aria-controls="collapseActividades">
+                                    Actividades
+                                </button>
+                            </h2>
+                            <div id="collapseActividades" class="accordion-collapse collapse show"
+                                aria-labelledby="headingActividades" data-bs-parent="#accordionActividades">
+                                <div class="accordion-body">
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item">Fases lunares</li>
+                                        <li class="list-group-item">Eclipses lunares</li>
+                                        <li class="list-group-item">Eclipses solares</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-2">
+                    <div class="accordion" id="accordionHistoria">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingHistoria">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseHistoria" aria-expanded="true"
+                                    aria-controls="collapseHistoria">
+                                    Historia
+                                </button>
+                            </h2>
+                            <div id="collapseHistoria" class="accordion-collapse collapse show"
+                                aria-labelledby="headingHistoria" data-bs-parent="#accordionHistoria">
+                                <div class="accordion-body">
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item">Historia de la Luna</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-xl-2">
+                    <div class="accordion" id="accordionCreditos">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCreditos">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCreditos" aria-expanded="true"
+                                    aria-controls="collapseCreditos">
+                                    Creditos
+                                </button>
+                            </h2>
+                            <div id="collapseCreditos" class="accordion-collapse collapse show"
+                                aria-labelledby="headingCreditos" data-bs-parent="#accordionCreditos">
+                                <div class="accordion-body">
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item">Creditos</li>
+                                        <li class="list-group-item">Mapa de navegación</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
