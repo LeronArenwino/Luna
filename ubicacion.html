@@ -79,11 +79,36 @@
                 </ul>
             </div>
         </nav>
+        <!-- Elemento para navegar en la página -->
+        <nav id="navbar-example2" class="navbar navbar-light px-3 bg-dark justify-content-center">
+            <!-- Elemento lista desordenada -->
+            <ul class="nav nav-pills">
+                <!-- Elemento de la lista desordenada -->
+                <li class="nav-item">
+                    <!-- Hyperlink hacía la sección de ubicación -->
+                    <a class="nav-link" href="#ubicacion">Ubicación</a>
+                </li>
+                <!-- Elemento de la lista desordenada -->
+                <li class="nav-item">
+                    <!-- Hyperlink hacía la sección de terreno lunar -->
+                    <a class="nav-link" href="#terreno_lunar">Terreno lunar</a>
+                </li>
+                <!-- Elemento de la lista desordenada -->
+                <li class="nav-item">
+                    <!-- Hyperlink hacía la sección de datos físicos -->
+                    <a class="nav-link" href="#datos_fisicos">Datos físicos</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <!-- Sección y contenedor principal con un ancho del 100%, un padding superior e inferior, lateral izquierdo y derecho de 3, con texto centrado, color blanco y fuente Monospace-->
-    <main class="container-fluid py-3 px-3 text-center text-light font-monospace">
+    <!-- Sección y contenedor principal con un ancho del 100%, un padding superior e inferior, lateral izquierdo y derecho de 3, con texto centrado, color blanco y fuente Monospace, con un Scrollpy del contenido -->
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2 text-center text-light font-monospace"
+        tabindex="0">
         <!-- Título principal-->
-        <h1 class="fw-bold">Ubicación de la Luna y su espacio físico</h1>
+        <h1 class="fw-bold">Ubicación y espacio físico</h1>
+        <!-- Título de la ubicación de la Luna con bold -->
+        <h2 id="ubicacion" class="fw-bold">Ubicación de la Luna</h2>
         <!-- Fila del contenedor que alinea sus elementos al centro y tiene un margen superior e inferior de 2 -->
         <div class="row my-2 align-items-center">
             <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 3 -->
@@ -99,8 +124,6 @@
                 <section>
                     <!-- Artículo de la ubicación de la Luna -->
                     <article class="text-sm-center text-md-end">
-                        <!-- Título de la ubicación de la Luna con bold -->
-                        <h2 class="fw-bold">Ubicación</h2>
                         <!-- Párrafo de la ubicación de la Luna -->
                         <p>Ubicada en el sistema solar, la Luna, es uno de los cuerpos más grandes
                             de este sistema.
@@ -113,6 +136,8 @@
                 </section>
             </div>
         </div>
+        <!-- Título del terreno lunar -->
+        <h2 id="terreno_lunar" class="fw-bold">Terreno lunar</h2>
         <!-- Fila del contenedor que alinea sus elementos al centro y tiene un margen superior e inferior de 2 -->
         <div class="row my-2 align-items-center">
             <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 3 -->
@@ -121,8 +146,6 @@
                 <section>
                     <!-- Artículo del terreno lunar -->
                     <article class="text-sm-center text-md-start">
-                        <!-- Título del terreno lunar -->
-                        <h2 class="fw-bold">Terreno lunar</h2>
                         <!-- Párrafo del terreno lunar -->
                         <p>Las áreas claras de la Luna se conocen como las tierras altas. Las formaciones oscuras,
                             llamadas
@@ -158,7 +181,7 @@
             </div>
         </div>
         <!-- Título de la sección de Datos físicos -->
-        <h2 class="fw-bold my-3">Datos físicos</h2>
+        <h2 id="datos_fisicos" class="fw-bold my-3">Datos físicos</h2>
         <!-- Fila del contenedor que alinea sus elementos al centro y tiene un margen superior e inferior de 2 -->
         <div class="row my-2 align-items-center">
             <!-- Columna del contenedor que cambia de tamaño dependiendo del breakpoint y tiene un margen superior e inferior de 3 -->
