@@ -22,6 +22,8 @@
 <!-- Todo los elementos interactivos con los que el usuario podrá interactuar -->
 
 <body>
+    <!-- Elemento para volver arriba -->
+    <a id="up"></a>
     <!-- Elementos para mostrar el efecto de estrellas del fondo -->
     <div id='stars'></div>
     <div id='stars2'></div>
@@ -469,6 +471,12 @@
             </div>
         </section>
     </main>
+    <!-- Contenedor que se pega a la parte inferior con un margen superior e inferior de 2 y margen lateral derecho e izquierdo de 4 -->
+    <div class="sticky-bottom text-end my-2 mx-4">
+        <!-- Botón que lleva a la parte superior de la página -->
+        <a type="button" class="btn btn-light" href="#up">Volver arriba</a>
+    </div>
+
     <!-- Script necesario para el funcionamiento de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
