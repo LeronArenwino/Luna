@@ -581,6 +581,41 @@ video {
     height: auto;
 }
 
+/* Se define el tipo de cursor y las ubicaciones del localizador */
+#pointer_1 {
+    cursor: pointer;
+    bottom: 67%;
+    left: 59%;
+}
+
+/* Se define el tipo de cursor y las ubicaciones del localizador */
+#pointer_2 {
+    cursor: pointer;
+    bottom: 49%;
+    left: 35%;
+}
+
+/* Se define el tipo de cursor y las ubicaciones del localizador */
+#pointer_3 {
+    cursor: pointer;
+    bottom: 46%;
+    left: 23%;
+}
+
+/* Se define el tipo de cursor y las ubicaciones del localizador */
+#pointer_4 {
+    cursor: pointer;
+    bottom: 33%;
+    left: 10%;
+}
+
+/* Se define el tipo de cursor y las ubicaciones del localizador */
+#pointer_5 {
+    cursor: pointer;
+    bottom: 15%;
+    left: 53%;
+}
+
 /* Se define el ancho y alto de los elementos de video para tamaños menores o iguales 576px */
 @media only screen and (max-width: 576px) {
     video {
